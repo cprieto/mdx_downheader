@@ -14,7 +14,7 @@ setup(
     author= 'Cristian Prieto',
     author_email='me@cprieto.com',
     url='http://github.com/cprieto/mdx_downheader',
-    py_modules='mdx_downheader',
+    py_modules=['mdx_downheader'],
     install_requires=['Markdown'],
     license='Simplified BSD License',
     classifiers=[

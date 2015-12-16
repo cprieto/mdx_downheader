@@ -1,6 +1,8 @@
 # Header Downgrader Extension for Python Markdown.
 
-When working with [markdown files](https://en.wikipedia.org/wiki/Markdown), sometimes you need to "downgrade" your headings for stying purposes. A good case scenario for this is using markdown with static site generators, for example, [Pelican](http://docs.getpelican.com/en/3.6.3/).
+[![Build status](https://travis-ci.org/cprieto/mdx_downheader.svg?branch=master)](https://travis-ci.org/cprieto/mdx_downheader)
+
+When working with [markdown files](https://en.wikipedia.org/wiki/Markdown), sometimes you need to "downgrade" your headings for styling purposes. A good case scenario for this is using markdown with static site generators, for example, [Pelican](http://docs.getpelican.com/en/3.6.3/).
 
 Given a piece of markdown like this:
 
@@ -9,7 +11,7 @@ Given a piece of markdown like this:
 ## This is header 2
 ```
 
-This will generate the following HTML:
+Python Markdown will generate the following HTML:
 
 ```html
 <h1>This is header 1</h1>
@@ -27,7 +29,7 @@ Easy!
 
 ## How to install
 
-Tested with Python 2.7 and Python 3.5.1
+Tested with Python 2.7, 3.2, 3.3, 3.4 and Python 3.5.1
 
 It requires the awesome [Python Markdown](https://pythonhosted.org/Markdown/index.html) package, tested with Markdown 2.6.5
 

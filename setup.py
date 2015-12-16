@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from setuptools import setup
+from setuptools import setup, find_packages
 from os import path
 
 HERE = path.abspath(path.dirname(__file__))
@@ -10,31 +10,28 @@ setup(
     version = '1.0.0',
     keywords='text filter markdown html headers',
     description='Python markdown extension to downgrade headers',
-    long_description='',
+    long_description='Python Markdown extension to downgrade headers, for example, from h1 to h2',
     author= 'Cristian Prieto',
     author_email='me@cprieto.com',
     url='http://github.com/cprieto/mdx_downheader',
-    py_modules=[],
-    install_requires=[],
+    packages=find_packages(exclude=['tests*']),
+    install_requires=['Markdown'],
     license='Simplified BSD License',
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Environment :: Console',
         'Intended Audience :: Developers',
+        'Intended Audience :: Science/Research',
         'License :: OSI Approved :: BSD License',
         'Operating System :: OS Independent',
         'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.6',
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.2',
-        'Programming Language :: Python :: 3.3',
-        'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: Implementation :: CPython',
-        'Programming Language :: Python :: Implementation :: PyPy',
         'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
         'Topic :: Software Development :: Libraries :: Python Modules',
         'Topic :: Text Processing :: Filters',
-        'Topic :: Text Processing :: Markup :: HTML',
-    ],
+        'Topic :: Text Processing :: Markup :: HTML'
+    ]
 )

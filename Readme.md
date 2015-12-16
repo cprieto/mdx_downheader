@@ -1,6 +1,6 @@
 # Header Downgrader Extension for Python Markdown.
 
-[![Build status](https://travis-ci.org/cprieto/mdx_downheader.svg?branch=master)](https://travis-ci.org/cprieto/mdx_downheader) [![Coverage](https://codecov.io/github/cprieto/mdx_downheader/coverage.svg?branch=master)](https://codecov.io/github/cprieto/mdx_downheader?branch=master)
+[![Build status](https://travis-ci.org/cprieto/mdx_downheader.svg?branch=master)](https://travis-ci.org/cprieto/mdx_downheader) [![Coverage](https://codecov.io/github/cprieto/mdx_downheader/coverage.svg?branch=master)](https://codecov.io/github/cprieto/mdx_downheader?branch=master) [![PyPI version](https://badge.fury.io/py/markdown-downheader.svg)](https://badge.fury.io/py/markdown-downheader)
 
 When working with [markdown files](https://en.wikipedia.org/wiki/Markdown), sometimes you need to "downgrade" your headings for styling purposes. A good case scenario for this is using markdown with static site generators, for example, [Pelican](http://docs.getpelican.com/en/3.6.3/).
 
@@ -49,3 +49,11 @@ python -m markdown -o html5 -x 'mdx_downheader' -f test.html test.md
 ```
 
 *Note*: Some static site generators, [like Pelican](http://docs.getpelican.com/en/3.6.3/settings.html), can use markdown extensions. You just need to install the pip package and provide the name of the markdown extension (in this case the name is simply 'mdx_downheader'). Follow the instructions for your case.
+
+## Errors? bugs?
+
+Simple, just create a ticket in Github, this will help me to maintain the library.
+
+## Contributions? pull requests?
+
+This is github, just fork and create a pull request, I will always welcome that!

@@ -3,7 +3,7 @@ from __future__ import unicode_literals
 from markdown import Extension
 from markdown.treeprocessors import Treeprocessor
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 
 
 class DownHeaderTreeProcessor(Treeprocessor):

@@ -45,10 +45,14 @@ markdown(text, ['mdx_downheader',]
 From the command line
 ```bash
 echo '# hello world' > test.md
-python -m markdown -o html5 -x 'mdx_downheader' -f test.html test.md
+python -m markdown -o html5 -x 'downheader' -f test.html test.md
 ```
 
-*Note*: Some static site generators, [like Pelican](http://docs.getpelican.com/en/3.6.3/settings.html), can use markdown extensions. You just need to install the pip package and provide the name of the markdown extension (in this case the name is simply 'mdx_downheader'). Follow the instructions for your case.
+*Note*: Some static site generators, [like Pelican](http://docs.getpelican.com/en/3.6.3/settings.html), can use markdown extensions. You just need to install the pip package and provide the name of the markdown extension (in this case the name is simply 'downheader'). For example, for Pelican just add this to your pelicanconf.py file:
+
+```
+MD_EXTENSIONS = ['downheader']
+```
 
 ## Errors? bugs?
 

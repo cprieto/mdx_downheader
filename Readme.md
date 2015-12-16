@@ -1,6 +1,6 @@
 # Header Downgrader Extension for Python Markdown.
 
-When working with markdown files, sometimes you need to "downgrade" your headings for stying purposes. A good case scenario for this is using markdown with static site generators, for example, Pelican.
+When working with [markdown files](https://en.wikipedia.org/wiki/Markdown), sometimes you need to "downgrade" your headings for stying purposes. A good case scenario for this is using markdown with static site generators, for example, [Pelican](http://docs.getpelican.com/en/3.6.3/).
 
 Given a piece of markdown like this:
 
@@ -29,7 +29,7 @@ Easy!
 
 Tested with Python 2.7 and Python 3.5.1
 
-It requires the Python Markdown package, tested with Markdown 2.6.5
+It requires the awesome [Python Markdown](https://pythonhosted.org/Markdown/index.html) package, tested with Markdown 2.6.5
 
 ## Usage
 
@@ -41,9 +41,9 @@ markdown(text, ['mdx_downheader',]
 ```
 
 From the command line
-```
+```bash
 echo '# hello world' > test.md
 python -m markdown -o html5 -x 'mdx_downheader' -f test.html test.md
 ```
 
-*Note*: Some static site generators, like pelican, can use markdown extensions. You just need to install the pip package and provide the name of the markdown extension (in this case the name is simply 'mdx_downheader'). Follow the instructions for your case.
+*Note*: Some static site generators, [like Pelican](http://docs.getpelican.com/en/3.6.3/settings.html), can use markdown extensions. You just need to install the pip package and provide the name of the markdown extension (in this case the name is simply 'mdx_downheader'). Follow the instructions for your case.

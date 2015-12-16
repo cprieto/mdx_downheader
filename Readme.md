@@ -4,21 +4,21 @@ When working with markdown files, sometimes you need to "downgrade" your heading
 
 Given a piece of markdown like this:
 
-```
+```md
 # This is header 1
 ## This is header 2
 ```
 
 This will generate the following HTML:
 
-```
+```html
 <h1>This is header 1</h1>
 <h2>This is header 2</h2>
 ```
 
 With this extension enabled we obtain this instead:
 
-```
+```html
 <h2>This is header 1</h2>
 <h3>This is header 2</h3>
 ```
@@ -34,7 +34,7 @@ It requires the Python Markdown package, tested with Markdown 2.6.5
 ## Usage
 
 Directly from python
-```
+```python
 from markdown import markdown
 text = '# hello world'
 markdown(text, ['mdx_downheader',]

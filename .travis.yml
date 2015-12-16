@@ -10,7 +10,7 @@ install:
   - pip install -r tests/requirements.txt
 
 script:
-  - nosetests --with-coverage --cover-branches --cover-package=mdx_superscript
+  - nosetests --with-coverage --cover-branches --cover-package=mdx_downheader
 
 after_success:
   - codecov

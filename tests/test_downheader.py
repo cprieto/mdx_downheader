@@ -29,6 +29,12 @@ class TestDownHeaderExtension(unittest.TestCase):
             result = markdown(text, ['downheader',])
             self.assertEqual(expected, result)
 
+    def test_if_it_only_register_extension_once(self):
+        text_input = "# Header 1"
+        expected = "<h2>Header 1</h2>"
+        result = markdown(text_input, ['downheader','downheader'])
+        self.assertEqual(expected, result)
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -17,9 +17,7 @@ class DownHeaderTreeProcessor(Treeprocessor):
 
 class DownHeaderExtension(Extension):
     def extendMarkdown(self, md, md_globals):
-        if 'downheader' in md.treeprocessors.keys():
-            md.treeprocessors['downheader'].offset += 1
-        else:
+        if 'downheader' not in md.treeprocessors.keys():
             md.treeprocessors.add('downheader', DownHeaderTreeProcessor(), '_end')
 
 

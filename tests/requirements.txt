@@ -1,0 +1,5 @@
+codecov==1.6.3
+coverage==4.0.3
+Markdown==2.6.5
+requests==2.9.0
+wheel==0.24.0

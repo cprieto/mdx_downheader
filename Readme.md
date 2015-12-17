@@ -60,4 +60,4 @@ Simple, just create a ticket in Github, this will help me to maintain the librar
 
 ## Contributions? pull requests?
 
-This is github, just fork and create a pull request, I will always welcome that!
+This is github, just fork and create a pull request, you will be always welcome to contribute!

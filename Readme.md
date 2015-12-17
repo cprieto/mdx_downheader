@@ -39,7 +39,7 @@ Directly from python
 ```python
 from markdown import markdown
 text = '# hello world'
-markdown(text, ['mdx_downheader',]
+markdown(text, ['downheader',]
 ```
 
 From the command line

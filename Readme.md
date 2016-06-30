@@ -39,13 +39,13 @@ Directly from python
 ```python
 from markdown import markdown
 text = '# hello world'
-markdown(text, ['downheader',]
+markdown(text, ['downheader(levels=1)',]
 ```
 
 From the command line
 ```bash
 echo '# hello world' > test.md
-python -m markdown -o html5 -x 'downheader' -f test.html test.md
+python -m markdown -o html5 -x 'downheader(levels=1)' -f test.html test.md
 ```
 
 *Note*: Some static site generators, [like Pelican](http://docs.getpelican.com/en/3.6.3/settings.html), can use markdown extensions. You just need to install the pip package and provide the name of the markdown extension (in this case the name is simply 'downheader'). For example, for Pelican just add this to your pelicanconf.py file:

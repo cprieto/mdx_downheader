@@ -29,6 +29,8 @@ Easy!
 
 ## How to install
 
+    pip install markdown-downheader
+
 Tested with Python 2.7 and Python 3.5
 
 It requires the awesome [Python Markdown](https://pythonhosted.org/Markdown/index.html) package, tested with Markdown 2.6.5

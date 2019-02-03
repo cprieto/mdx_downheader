@@ -41,7 +41,7 @@ Directly from python
 ```python
 from markdown import markdown
 text = '# hello world'
-markdown(text, ['downheader(levels=1)',]
+markdown(text, ['downheader(levels=1)',])
 ```
 
 From the command line

@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
-from markdown import Extension
+from markdown import Extension, version_info as markdown_vesion
 from markdown.treeprocessors import Treeprocessor
-
-__version__ = "1.0.1"
+__version__ = "1.0.2"
 
 
 class DownHeaderTreeProcessor(Treeprocessor):
@@ -28,7 +27,9 @@ class DownHeaderExtension(Extension):
         super(DownHeaderExtension, self).__init__(**kwargs)
 
     def extendMarkdown(self, md, md_globals):
-        if 'downheader' not in md.treeprocessors.keys():
+        treeprocessors = md.treeprocessors.keys() if markdown_vesion[0] < 3 else md.treeprocessors
+
+        if 'downheader' not in treeprocessors:
             treeprocessor = DownHeaderTreeProcessor(self.getConfig('levels'))
             md.treeprocessors.add('downheader', treeprocessor, '_end')
 

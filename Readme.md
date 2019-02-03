@@ -56,6 +56,35 @@ python -m markdown -o html5 -x 'downheader(levels=1)' -f test.html test.md
 MD_EXTENSIONS = ['downheader']
 ```
 
+As of [Pelican 3.7](http://docs.getpelican.com/en/3.7.0/settings.html) you have to define the Markdown extensions as a dictionary. Here is an example:
+
+```python
+MARKDOWN = {
+    'extension_configs': {
+        'markdown.extensions.codehilite': {'css_class': 'highlight'},
+        'markdown.extensions.extra': {},
+        'markdown.extensions.meta': {},
+        'downheader': {},
+    },
+    'output_format': 'html5',
+}
+```
+
+To pass a value, you can use the following:
+
+```python
+# Markdown Plugins
+MARKDOWN = {
+    'extension_configs': {
+        'markdown.extensions.codehilite': {'css_class': 'highlight'},
+        'markdown.extensions.extra': {},
+        'markdown.extensions.meta': {},
+        'downheader': {'levels': '2'},
+    },
+    'output_format': 'html5',
+}
+```
+
 ## Errors? bugs?
 
 Simple, just create a ticket in Github, this will help me to maintain the library.

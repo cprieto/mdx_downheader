@@ -9,11 +9,11 @@ with open(path.join(HERE, 'Readme.md')) as f:
 
 setup(
     name='markdown_downheader',
-    version = '1.1.2',
+    version = '1.1.3',
     keywords='text filter markdown html headers',
-    description=long_description,
+    description='Python Markdown extension to downgrade headers, for example, from h1 to h2',
     long_description_content_type='text/markdown',
-    long_description='Python Markdown extension to downgrade headers, for example, from h1 to h2',
+    long_description=long_description,
     author= 'Cristian Prieto',
     author_email='me@cprieto.com',
     url='http://github.com/cprieto/mdx_downheader',

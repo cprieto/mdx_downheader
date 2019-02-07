@@ -4,12 +4,12 @@ from setuptools import setup, find_packages
 from os import path
 
 HERE = path.abspath(path.dirname(__file__))
-with open(path.join(HERE, 'README.md')) as f:
+with open(path.join(HERE, 'Readme.rst')) as f:
     long_description = f.read()
 
 setup(
     name='markdown_downheader',
-    version = '1.0.1',
+    version = '1.1.1',
     keywords='text filter markdown html headers',
     description=long_description,
     long_description='Python Markdown extension to downgrade headers, for example, from h1 to h2',

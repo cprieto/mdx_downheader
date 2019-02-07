@@ -1,0 +1,3 @@
+recursive-exclude dist *
+recursive-exclude guayaba *.pyc
+recursive-include . Readme.md

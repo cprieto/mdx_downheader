@@ -1,3 +1,4 @@
 recursive-exclude dist *
-recursive-exclude guayaba *.pyc
+recursive-exclude . *.pyc
+recursive-exclude tests *
 recursive-include . Readme.md

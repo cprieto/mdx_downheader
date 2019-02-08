@@ -1,2 +1,0 @@
-Markdown==2.6.5
-wheel==0.24.0

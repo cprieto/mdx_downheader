@@ -19,6 +19,11 @@ setup(
     url='http://github.com/cprieto/mdx_downheader',
     py_modules=['mdx_downheader'],
     install_requires=['Markdown'],
+    test_require=[
+        'codecov',
+        'coverage',
+        'nose'
+    ],
     license='Simplified BSD License',
     classifiers=[
         'Development Status :: 5 - Production/Stable',

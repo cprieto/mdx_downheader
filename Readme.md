@@ -1,5 +1,9 @@
 # Header Downgrader Extension for Python Markdown.
 
+### Extension is discontinued
+
+I will highly recommend to replace it with [Markdown headdown](https://pypi.org/project/markdown-headdown/) instead, it offers the same functionality and it is updated.
+
 [![Build status](https://travis-ci.org/cprieto/mdx_downheader.svg?branch=master)](https://travis-ci.org/cprieto/mdx_downheader) [![Coverage](https://codecov.io/github/cprieto/mdx_downheader/coverage.svg?branch=master)](https://codecov.io/github/cprieto/mdx_downheader?branch=master) [![PyPI version](https://badge.fury.io/py/markdown-downheader.svg)](https://badge.fury.io/py/markdown-downheader)
 
 When working with [markdown files](https://en.wikipedia.org/wiki/Markdown), sometimes you need to "downgrade" your headings for styling purposes. A good case scenario for this is using markdown with static site generators, for example, [Pelican](http://docs.getpelican.com/en/3.6.3/).
